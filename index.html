@@ -279,27 +279,30 @@
     <div class="projects-list">
       <div class="project-row">
         <span class="project-num">001</span>
-        <div class="project-info"><h3>NeuralNote</h3><p>LLM destekli, not alma ve özetleme uygulaması. Ders notlarını otomatik kategorize eder.</p></div>
-        <div class="project-tech"><span class="tech-badge">Python</span><span class="tech-badge">FastAPI</span><span class="tech-badge">React</span></div>
-        <a href="#" class="project-link">GitHub →</a>
+        <div class="project-info">
+          <h3>Dijitalin Öncüleri</h3>
+          <p>Gençlik ve Spor Bakanlığı ÜNİDES programı kapsamında desteklenen sosyal girişim projesi. Gençlerin dijital okuryazarlık becerilerini geliştirmeyi hedefliyor.</p>
+        </div>
+        <div class="project-tech"><span class="tech-badge">ÜNİDES</span><span class="tech-badge">GSB</span><span class="tech-badge">Sosyal Girişim</span></div>
+        <a href="#" class="project-link">Detay →</a>
       </div>
       <div class="project-row">
         <span class="project-num">002</span>
-        <div class="project-info"><h3>DataViz Dashboard</h3><p>Veri topluluğu etkinlikleri için katılım ve büyüme verilerini görselleştiren analitik panel.</p></div>
-        <div class="project-tech"><span class="tech-badge">Python</span><span class="tech-badge">Plotly</span><span class="tech-badge">Pandas</span></div>
-        <a href="#" class="project-link">GitHub →</a>
+        <div class="project-info">
+          <h3>TÜBİTAK Yazılım Projesi</h3>
+          <p>TÜBİTAK Milli Teknoloji Kulüpler Birliği tarafından <strong style="color:var(--accent)">150.000 TL</strong> desteklenen yazılım projesi.</p>
+        </div>
+        <div class="project-tech"><span class="tech-badge">TÜBİTAK</span><span class="tech-badge">MTKB</span><span class="tech-badge">Yazılım</span></div>
+        <a href="#" class="project-link">Detay →</a>
       </div>
       <div class="project-row">
         <span class="project-num">003</span>
-        <div class="project-info"><h3>AlgoVisual</h3><p>Sıralama ve arama algoritmalarını görselleştiren interaktif web uygulaması.</p></div>
-        <div class="project-tech"><span class="tech-badge">JavaScript</span><span class="tech-badge">D3.js</span><span class="tech-badge">CSS</span></div>
-        <a href="#" class="project-link">GitHub →</a>
-      </div>
-      <div class="project-row">
-        <span class="project-num">004</span>
-        <div class="project-info"><h3>StockML</h3><p>LSTM ağları ile hisse senedi fiyat tahmini. Veri toplama, işleme ve model eğitimi pipeline'ı.</p></div>
-        <div class="project-tech"><span class="tech-badge">Python</span><span class="tech-badge">TensorFlow</span><span class="tech-badge">Pandas</span></div>
-        <a href="#" class="project-link">GitHub →</a>
+        <div class="project-info">
+          <h3>Siber Kulüpler Birliği Üyeliği</h3>
+          <p>Veri Topluluğu başkanlığım sürecinde topluluğumuzu Siber Kulüpler Birliği'ne üye yaparak ulusal ağa dahil ettim.</p>
+        </div>
+        <div class="project-tech"><span class="tech-badge">Siber KB</span><span class="tech-badge">Topluluk</span><span class="tech-badge">Liderlik</span></div>
+        <a href="#" class="project-link">Detay →</a>
       </div>
     </div>
   </section>
@@ -311,7 +314,7 @@
       <h2 class="contact-title">Konuşalım<span>.</span></h2>
       <p class="contact-sub">Bir proje fikrin mi var? İşbirliği yapmak mı istiyorsun?<br/>Veya sadece teknoloji hakkında sohbet etmek mi? Her zaman buradayım.</p>
       <div class="contact-links">
-        <a href="mailto:senim@email.com" class="contact-btn primary">✉ Mail Gönder</a>
+        <a href="/cdn-cgi/l/email-protection#1b687e7572765b7e767a727735787476" class="contact-btn primary">✉ Mail Gönder</a>
         <a href="https://github.com" target="_blank" class="contact-btn">⌥ GitHub</a>
         <a href="https://linkedin.com" target="_blank" class="contact-btn">in LinkedIn</a>
       </div>
@@ -323,7 +326,7 @@
     <p>Bilgisayar Müh. Öğrencisi · Veri Topluluğu Başkanı · Yazılımcı</p>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const posts = [
       {
         tag: "Yapay Zeka", tagClass: "ai",
@@ -534,11 +537,4 @@ r = anlık ödül</pre>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if (entry.isIntersecting) entry.target.style.animation = 'fadeUp 0.6s ease forwards'; });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.post-card, .project-row, .skill-card').forEach((el, i) => {
-      el.style.opacity = '0';
-      el.style.animationDelay = (i * 0.08) + 's';
-      observer.observe(el);
-    });
-  </script>
-</body>
-</html>
+    document.querySelectorAll('.post-card, .project-row, .skill-card').forEach((el, i) =>
